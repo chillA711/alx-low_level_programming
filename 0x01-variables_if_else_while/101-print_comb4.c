@@ -15,20 +15,16 @@ for (tens = '0'; tens <= '9'; tens++)
 {
 for (ones = '0'; ones <= '9'; ones++)
 {
-if (!((ones == tens) || (tens == hundreds) || (tens > ones) || (hundreds > tens)))
-{
+if (!((ones == tens) || (tens == hundreds) || (tens > ones) || (hundreds > tens))){
 putchar(hundreds);
 putchar(tens);
 putchar(ones);
-if (!(ones == '9' && hundreds == '7' && tens == '8'))
-{
+if (!(ones == '9' && hundreds == '7' && tens == '8')){
 putchar(',');
-putchar(' ');
-}
+putchar(' ');}
 }
 }
 }
 }
 putchar('\n');
-return (0);
-}
+return (0);}
